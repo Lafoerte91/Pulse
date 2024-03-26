@@ -1,0 +1,18 @@
+@import './variables';
+@import './mixins';
+@import './general';
+@import './media';
+@import './promo';
+@import './header';
+@import './buttons';
+@import './advantages';
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}

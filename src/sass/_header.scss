@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 91px;
+  &__logo
+  {
+    width: 250px;
+  }
+  &__official
+  {
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    text-align: center;
+    color: #fff;
+    span {
+      margin-top: 7px;
+      display: block;
+      font-size: 18px;
+    }
+  }
+  &__phone {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: right;
+    color: #fff;
+    display: block;
+    margin-bottom: 4px;
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+  &__contacts
+  {
+    display: flex;
+    flex-direction: column;
+  }
+}
