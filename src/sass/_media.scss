@@ -2,4 +2,8 @@
   .header__official span {
     font-size: 12px;
   }
+  .advantages
+  &__items {
+    flex-direction: column;
+  }
 }
