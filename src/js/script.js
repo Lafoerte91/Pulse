@@ -22,3 +22,27 @@ document.querySelector('.prev').addEventListener('click', function () {
 document.querySelector('.next').addEventListener('click', function () {
   slider.goTo('next');
 })
+
+$(document).ready(function(){
+  $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab--active)', function() {
+    $(this)
+      .addClass('catalog__tab--active').siblings().removeClass('catalog__tab--active')
+      .closest('div.container').find('div.catalog__content').removeClass('catalog__content--active').eq($(this).index()).addClass('catalog__content--active');
+  });
+
+  $('.catalog__link').each(function(i) {
+    $(this).on('click', function(e) {
+      e.preventDefault();
+      $('.catalog__item-content').eq(i).toggleClass('catalog__item-content--active');
+      $('.catalog__list').eq(i).toggleClass('catalog__list--active');
+    })
+  })
+
+  $('.catalog__back').each(function(i) {
+    $(this).on('click', function(e) {
+      e.preventDefault();
+      $('.catalog__item-content').eq(i).toggleClass('catalog__item-content--active');
+      $('.catalog__list').eq(i).toggleClass('catalog__list--active');
+    })
+  })
+})
