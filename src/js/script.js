@@ -136,4 +136,7 @@ $(document).ready(function(){
     scrollTop: $(anchor).offset().top // #4
     }, 1500); // #5
   });
+
+  // Animate.CSS and WOW
+  new WOW().init();
 })
