@@ -3,6 +3,9 @@ const browserSync = require('browser-sync').create();
 const sass        = require('gulp-sass')(require('sass'));
 const cleanCSS    = require('gulp-clean-css');
 const rename      = require("gulp-rename");
+const imagemin    = require('gulp-imagemin');
+const imagemin    = require('gulp-htmlmin');
+
 
 gulp.task('server', function() {
     browserSync.init({
