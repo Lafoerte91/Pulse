@@ -13,7 +13,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 382px;
-  height: 402px;
+  min-height: 402px;
   background-color: #f2f2f2;
   padding: 35px 40px 40px;
   &__mini {
@@ -49,7 +49,14 @@
   .feed-form input:last-child {
     margin-bottom: 17px;
   }
-  
+  .error {
+    border: 1px solid red;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  label.error {
+    border: none;
+  }
 }
 
 #consultation, #order, #thanks {

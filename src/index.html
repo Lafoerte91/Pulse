@@ -86,7 +86,7 @@
 
       <div class="consultation__descr">Просто заполните форму заявки и мы перезвоним вам в течении 10 минут</div>
 
-      <form class="feed-form" action="#">
+      <form id="consultation-form" class="feed-form" action="#">
         <input name="name" type="text" placeholder="Ваше имя" required>
         <input name="phone" type="number" placeholder="Ваш телефон" required>
         <input name="email" type="email" placeholder="Ваш E-mail" required>
@@ -351,9 +351,9 @@
       <div class="modal__subtitle">Просто заполните форму заявки</div>
       <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
       <form class="feed-form" action="#">
-        <input name="name" type="text" placeholder="Ваше имя" required>
-        <input name="phone" type="number" placeholder="Ваш телефон" required>
-        <input name="email" type="email" placeholder="Ваш E-mail" required>
+        <input name="name" type="text" placeholder="Ваше имя">
+        <input name="phone" type="number" placeholder="Ваш телефон">
+        <input name="email" type="email" placeholder="Ваш E-mail">
         <button class="button button--submit">заказать кОНСУЛЬТАЦИЮ</button>
       </form>
     </div>
@@ -380,6 +380,7 @@
   <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <!-- <script src="./js/slick.min.js"></script> --> 
+  <script src="./js/jquery.validate.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
   <script src="./js/script.js"></script>
 </body>
